@@ -1,7 +1,6 @@
-import 'package:darkmode_ui/components/button.dart';
 import 'package:flutter/material.dart';
-
 import '../components/box.dart';
+import '../components/button.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -9,12 +8,12 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.deepPurple[500],
+        backgroundColor: Theme.of(context).colorScheme.surface,
         body: Center(
           child: MyBox(
-              color: Colors.deepPurple[300],
+              color: Theme.of(context).colorScheme.primary,
               child: MyButton(
-                color: Colors.deepPurple[200],
+                color: Theme.of(context).colorScheme.secondary,
                 onTap: () {},
               )),
         ));

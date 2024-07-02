@@ -4,7 +4,7 @@ class MyBox extends StatelessWidget {
   final Widget? child;
   final Color? color;
 
-  MyBox({super.key, required this.color, required this.child});
+  const MyBox({super.key, required this.color, required this.child});
 
   @override
   Widget build(BuildContext context) {

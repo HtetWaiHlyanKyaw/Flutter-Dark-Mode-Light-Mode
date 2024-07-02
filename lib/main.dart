@@ -1,4 +1,5 @@
 import 'package:darkmode_ui/pages/home_page.dart';
+import 'package:darkmode_ui/themes/theme.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,7 +13,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: const HomePage(),
+      theme: lightMode,
+      darkTheme: darkMode,
     );
   }
 }
